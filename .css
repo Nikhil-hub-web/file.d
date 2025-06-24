@@ -1,0 +1,36 @@
+/* styles.css */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, sans-serif; line-height:1.6; color:#333; }
+.container { max-width:1000px; margin:auto; padding:20px; }
+
+/* Navbar */
+.site-header { background:#004080; color:#fff; }
+.logo { display:inline-block; font-size:1.5em; padding:10px 0; }
+.nav { float:right; }
+.nav a { color:#fff; margin-left:15px; text-decoration:none; }
+.nav a:hover { text-decoration:underline; }
+
+/* Hero */
+.hero { background:#f4f4f4; padding:60px 0; text-align:center; }
+.hero h2 { margin-bottom:10px; }
+.btn { display:inline-block; background:#004080; color:#fff; padding:10px 20px; text-decoration:none; border-radius:4px; margin-top:10px; }
+.btn:hover { background:#003060; }
+
+/* Sections */
+section { padding:40px 0; }
+.service-list { display:flex; flex-wrap:wrap; gap:20px; }
+.service { flex:1; min-width:200px; background:#e8e8e8; padding:20px; border-radius:4px; }
+
+/* Contact form */
+.contact form input, .contact form textarea {
+  width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:4px;
+}
+
+/* Footer */
+.site-footer { background:#222; color:#fff; text-align:center; padding:10px 0; margin-top:40px; }
+
+/* Responsive */
+@media(max-width:600px) {
+  .nav { float:none; text-align:center; margin-top:10px; }
+  .service-list { flex-direction:column; }
+}
